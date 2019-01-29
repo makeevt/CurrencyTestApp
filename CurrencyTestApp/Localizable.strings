@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  CurrencyTestApp
+
+  Created by makeev on 28.01.2019.
+  
+*/
+
+"currencyRate.screenTitle"          = "Currency Rate";
+
+"currencyType.fullName.eur" = "Euro";
+"currencyType.fullName.aud" = "Australian Dollar";
+"currencyType.fullName.bgn" = "Bulgarian Lev";
+"currencyType.fullName.brl" = "Brazilian Real";
+"currencyType.fullName.cad" = "Canadian Dollar";
+"currencyType.fullName.chf" = "Swiss Franc";
+"currencyType.fullName.cny" = "Chinese Yuan";
+"currencyType.fullName.czk" = "Czech Koruna";
+"currencyType.fullName.dkk" = "Danish Krone";
+"currencyType.fullName.gbp" = "British Pound";
+"currencyType.fullName.hkd" = "Hong Kong Dollar";
+"currencyType.fullName.hrk" = "Croatian Kuna";
+"currencyType.fullName.huf" = "Hungarian Forint";
+"currencyType.fullName.idr" = "Indonesian Rupiah";
+"currencyType.fullName.ils" = "Israeli Shekel";
+"currencyType.fullName.inr" = "Indian Rupee";
+"currencyType.fullName.isk" = "Icelandic Krona";
+"currencyType.fullName.jpy" = "Japanese Yen";
+"currencyType.fullName.krw" = "South Korean Won";
+"currencyType.fullName.mxn" = "Mexican Peso";
+"currencyType.fullName.myr" = "Malaysian Ringgit";
+"currencyType.fullName.nok" = "Norwegian Krone";
+"currencyType.fullName.nzd" = "New Zealand Dollar";
+"currencyType.fullName.php" = "Philippines Peso";
+"currencyType.fullName.pln" = "Polish Zloty";
+"currencyType.fullName.ron" = "Romanian Leu";
+"currencyType.fullName.rub" = "Russian Ruble";
+"currencyType.fullName.sek" = "Swedish Krona";
+"currencyType.fullName.sgd" = "Singapore Dollar";
+"currencyType.fullName.thb" = "Thai Baht";
+"currencyType.fullName.try" = "Turkish Lira";
+"currencyType.fullName.usd" = "US Dollar";
+"currencyType.fullName.zar" = "South African Rand";

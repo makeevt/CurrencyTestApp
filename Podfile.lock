@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Fashion (4.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - ObjectMapper (3.4.2)
+  - ReachabilitySwift (4.3.0)
+  - Result (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Fashion
+  - IQKeyboardManagerSwift
+  - Moya
+  - ObjectMapper
+  - ReachabilitySwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Fashion
+    - IQKeyboardManagerSwift
+    - Moya
+    - ObjectMapper
+    - ReachabilitySwift
+    - Result
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Fashion: 939fc05c7375625ed7d36318d1ebb1a80439d478
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+
+PODFILE CHECKSUM: e8c0a3c55f30e68e68d1b8c1557c644a74d5b6bf
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Fashion {
+  umbrella header "Fashion-umbrella.h"
+
+  export *
+  module * { export * }
+}
