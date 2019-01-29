@@ -11,45 +11,12 @@ enum Styles {
         case `default`
     }
     
-    enum ELDTextField: String, StringConvertible {
-        case dark
-        case light
-        case logInfo
-        case forLogsComponent
-    }
-    
 }
 
 struct MainStylesheet: Stylesheet {
-    
-    private struct Constants {
-        static let borderWidth = 1.0
-        static let cornerRadius = 4.0
-    }
 
     func define()
     {
-        //MARK:- General
-        
-
-        
-        //MARK:- ELDButton
-        
-//        register(Styles.ELDButton.primary) { (button:ELDButton) in
-//            button.apply(styles: Styles.General.roundCorners)
-//            
-//            // Normal
-//            button.setBackgroundColor(UIColor.eiAzureTwo,      for: .normal)
-//            button.setTitleColor(UIColor.eiWhite,              for: .normal)
-//            // Highlighted
-//            button.setBackgroundColor(UIColor.eiTurquoiseBlue, for: .highlighted)
-//            button.setTitleColor(UIColor.eiWhite,              for: .highlighted)
-//            // Disabled
-//            button.setBackgroundColor(UIColor.eiAzureTwo.withAlphaComponent(0.4), for: .disabled)
-//            button.setTitleColor(UIColor.eiWhite.withAlphaComponent(0.4),         for: .disabled)
-//            
-//            button.titleLabel?.font = UIFont.mediumAzoSansFont(ofSize: 16)
-//        }
         
         //MARK:- UINavigationBar
         
