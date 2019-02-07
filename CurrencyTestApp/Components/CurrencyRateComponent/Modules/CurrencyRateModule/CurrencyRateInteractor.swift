@@ -29,6 +29,7 @@ class CurrencyRateInteractorImpl: CurrencyRateInteractor {
         self.currencyUpdateHelper = CurrencyUpdateHelper(provider: self.serviceLocator.networkService.unauthorizedProvider)
         self.currencyUpdateHelper.delegate = self
         self.currencyUpdateHelper.startUpdateCurrency()
+        self.serviceLocator.networkService.delegate.addDelegate(self)
     }
     
     func obtainCurrencies() -> [CurrencyRateViewModel] {
@@ -50,5 +51,11 @@ extension CurrencyRateInteractorImpl: CurrencyUpdateHelperDelegate {
         Thread.do_onMainThread {
             self.output?.currencyRateInteractor(self, didRecieveUpdatedCurrencies: currencyUpdateHelper.currenciesArray)
         }
+    }
+}
+
+extension CurrencyRateInteractorImpl: NetworkServiceDelegate {
+    func networkService(_ networkService: NetworkService, didChangeNetworkReachable networkReachable: Bool) {
+        networkReachable ? self.currencyUpdateHelper.startUpdateCurrency() : self.currencyUpdateHelper.stopUpdateCurrency()
     }
 }

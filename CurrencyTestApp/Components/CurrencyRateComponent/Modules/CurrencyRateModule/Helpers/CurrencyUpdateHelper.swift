@@ -15,6 +15,7 @@ class CurrencyUpdateHelper {
     
     private struct Constants {
         static let updateInterval: TimeInterval = 1.0 // 1 second
+        static let initialCurrencyType: CurrencyRateViewModel.CurrencyType = .eur
     }
     
     weak var delegate: CurrencyUpdateHelperDelegate?
@@ -39,7 +40,7 @@ class CurrencyUpdateHelper {
     
     init(provider: WebMobileAPIProvider) {
         self.networkProvider = provider
-        let initialCurrency = CurrencyRateViewModel(type: .eur, exchangeRate: 1.0)
+        let initialCurrency = CurrencyRateViewModel(type: Constants.initialCurrencyType, exchangeRate: 1.0)
         self.currentBaseType = initialCurrency.type
         self.currencies = [initialCurrency.type.rawValue: initialCurrency]
     }
@@ -81,10 +82,10 @@ class CurrencyUpdateHelper {
             
             for model in self.currencies.values {
                 if model.type == type {
-                    currency.updateExchangeParameters(newRate: 1.0, newAmount: newAmount)
+                    model.updateExchangeParameters(newRate: 1.0, newAmount: newAmount)
                     continue
                 }
-                let newRate = model.exchangeResult / newAmount
+                let newRate = newAmount > 0 ? model.exchangeResult / newAmount : 0.0
                 model.updateExchangeParameters(newRate: newRate, newAmount: newAmount)
             }
         }
